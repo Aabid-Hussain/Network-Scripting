@@ -23,4 +23,8 @@ if password:
 tn.write("ls\n")
 tn.write("exit\n")
 print tn.read_all()
+
+RegEx = r"(^%s.*\s([0-9]+\.[0-9]+\.[0-9]+.\[0-9]+).*([0-9]+\.[0-9]+\.[0-9]+\.[0-9]) %Type_of_Route :- used for find 4 dotted decimal values and group it. group(1) will give network and group(2) will give gateway. Note: Type_of_Route = O IA/ O N2/ O N1
+
+
     
