@@ -4,13 +4,13 @@ def main():
 	# initialize variables
 	command_list = []
 	newline = "\n"
-	running = True
+	Loop_Life = True
 
 	fa_port = []
 	for i in range(1, 49):
 		fa_port.append("0/" + str(i))
 	
-	while running:
+	while Loop_Life :
 		# main menu
 		print
 
@@ -136,7 +136,7 @@ def main():
 							
 				else:
 					print
-					print "Invalid port"
+					print "Invalid port, recheck the port format"
 			
 			# config interface - GigabitEthernet
 			elif int_choice == '2':
@@ -298,7 +298,7 @@ def main():
 		elif main_choice == '0':
 			print
 			print "Exit program"
-			running = False
+			Loop_Life = False
 			
 			return 0
 		  
