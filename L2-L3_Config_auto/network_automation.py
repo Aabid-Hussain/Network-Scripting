@@ -1,6 +1,4 @@
 # Pynet
-# Network Automation Using Python
-
 import paramiko
 import getpass
 import time

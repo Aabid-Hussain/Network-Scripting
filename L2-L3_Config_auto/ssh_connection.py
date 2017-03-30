@@ -19,7 +19,7 @@ if True:
 
     #VARIABLES THAT NEED CHANGED
 	ip = 'x.x.x.x'
-	username = 'pkreddi'
+	username = 'aabid'
 	password = 'xxxxxxx'
 	
 	#Create instance of SSHClient object
