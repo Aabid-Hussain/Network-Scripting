@@ -4,7 +4,7 @@ import paramiko
 import time
 
 def disable_paging(remote_conn):
-    #'''Disable paging'''
+	#'''Disable paging'''
 	remote_conn.send("terminal length 0\n")
 	time.sleep(1)
 	
@@ -26,8 +26,7 @@ if True:
 	remote_conn_pre = paramiko.SSHClient()
 	
 	#Automatically add untrusted hosts 
-	remote_conn_pre.set_missing_host_key_policy(
-	    paramiko.AutoAddPolicy())
+	remote_conn_pre.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 		
 	#initiate SSH connection
 	remote_conn_pre.connect(ip, username = username, password = password)
