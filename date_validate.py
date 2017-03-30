@@ -5,9 +5,6 @@ import re
 # February only to the 28th 
 regex_01_to_28 = "((0[1-9]|1[0-9]|2[0-8])/02)"
 
-
-
-
 # April, June, September, November have 30 days \
 regex_01_to_30 = "((0[1-9]|[12][0-9]|30)/(04|06|09|11))"
 

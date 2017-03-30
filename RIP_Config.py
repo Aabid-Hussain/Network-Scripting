@@ -4,7 +4,7 @@ import re
 import telnetlib
 import getpass
 
-fob = open("E:\ME\Github_Network-Scripting\File_Loc\DUT.txt", "r+")
+fob = open("E:\ME\Github_Network-Scripting\File_Loc\device.txt", "r+")
 
 
 class RESOURCE:
@@ -35,6 +35,5 @@ def Device_Details(file_info):
    #for i in Device_Info.keys():
     #    setattr(div,i,Device_Info[i])
     return res
-
 
 fob.close()
