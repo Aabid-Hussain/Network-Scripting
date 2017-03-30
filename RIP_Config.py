@@ -37,7 +37,4 @@ def Device_Details(file_info):
     return res
 
 
-print Device_Info
-
-
 fob.close()
