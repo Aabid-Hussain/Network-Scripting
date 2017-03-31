@@ -36,6 +36,7 @@ def ip_valid(ip_addr):
 
 	# Check 169.254.X.X condition
 	if first_octet == 169 and second_octet == 254:
+		print "Address is part of APIPA-Automatic Private IP Address"
 		valid_ip = False
 
 	# Check 2nd - 4th octets
