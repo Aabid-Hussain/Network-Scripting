@@ -5,6 +5,8 @@ import time
 import sys
 import re
 
+''' Logic is required to add Regular Express for validation of IP addresses'''
+
 # Define helper functions
 def ip_valid(ip_addr):
 	valid_ip = True

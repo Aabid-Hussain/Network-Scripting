@@ -3,8 +3,8 @@
 import time
 
 import telnet_connection as telnet
-import cisco_config as config
-import open_excel_file as excel
+import Device_Config as config
+import Read_Excel_File as excel
 
 
 class NetworkDevice(object):
