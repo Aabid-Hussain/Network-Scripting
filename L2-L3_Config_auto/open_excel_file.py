@@ -3,7 +3,9 @@
 import xlrd
 
 def open_excel_file(workbook_name):
+	#use xlrd.open_workbook(path/object) for opening excel sheet
 	workbook = xlrd.open_workbook(workbook_name)
+	#under excel, capture sheet 1
 	worksheet = workbook.sheet_by_name('Sheet1')
 
 	return worksheet

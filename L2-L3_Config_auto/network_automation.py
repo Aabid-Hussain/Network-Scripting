@@ -3,6 +3,7 @@ import paramiko
 import getpass
 import time
 import sys
+import re
 
 # Define helper functions
 def ip_valid(ip_addr):
