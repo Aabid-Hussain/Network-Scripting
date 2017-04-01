@@ -15,7 +15,7 @@ def main():
 	'''
 	Open "switch_list.xlsx" and display its data
 	'''
-	worksheet = open_excel_file("switch_list.xlsx")
+	worksheet = open_excel_file("Device_List.xlsx")
 	num_rows = worksheet.nrows - 1
 	num_cells = worksheet.ncols - 1
 	curr_row = -1
