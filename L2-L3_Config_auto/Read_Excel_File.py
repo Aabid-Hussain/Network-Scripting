@@ -1,4 +1,4 @@
-# open_excel_file.py
+# open Device_List.xlsx
 
 import xlrd
 
