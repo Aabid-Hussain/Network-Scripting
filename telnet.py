@@ -34,7 +34,7 @@ if Password_Enable:
     Run_Conf = Router_1.read_until("R1#",5)
     print Inter_Brief
     print Run_Conf
-
+print Router_1.readall()
 Router_1.close()
 
 

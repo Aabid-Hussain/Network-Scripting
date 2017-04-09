@@ -29,7 +29,7 @@ def establish_connection(ip, username = '', password = '', delay = 1):
     #output = remote_conn.read_until("sername:", READ_TIMEOUT)
     #remote_conn.write(username + "\n")
 
-    output = remote_conn.read_until("ssword:", READ_TIMEOUT)
+    output = remote_conn.read_until("password:", READ_TIMEOUT)
     remote_conn.write(password + "\n")
 
     time.sleep(delay)
