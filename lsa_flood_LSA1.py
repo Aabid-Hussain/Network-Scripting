@@ -129,7 +129,7 @@ else :
 adv_router = dut_router_id
 ##### Wait for neighbour to reach full state ####################
 log_print ("Waiting for 15 seconds for neighbour to reach full state",1)
-time.sleep(25)
+time.sleep(40)
 
 Lsa1_list = ospf_get_lsa_type1(R2, adv_router)
 dut_network_list = ['10.1.1.1','10.2.1.1','10.3.1.1']
