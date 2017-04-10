@@ -128,7 +128,7 @@ else :
 ##################Step 5: Check if DUT sends its networks to R2 as LSA1###########
 adv_router = dut_router_id
 ##### Wait for neighbour to reach full state ####################
-log_print ("Waiting for 15 seconds for neighbour to reach full state",1)
+log_print ("Waiting for 40 seconds for neighbour to reach full state",1)
 time.sleep(40)
 
 Lsa1_list = ospf_get_lsa_type1(R2, adv_router)
