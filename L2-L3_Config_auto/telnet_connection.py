@@ -26,7 +26,7 @@ def establish_connection(ip, username = '', password = '', delay = 1):
     remote_conn = telnetlib.Telnet(ip, TELNET_PORT, TELNET_TIMEOUT)
     print "Connecting To " + ip + "..."
 
-    #output = remote_conn.read_until("sername:", READ_TIMEOUT)
+    #output = remote_conn.read_until("username:", READ_TIMEOUT)
     #remote_conn.write(username + "\n")
 
     output = remote_conn.read_until("password:", READ_TIMEOUT)
@@ -40,7 +40,7 @@ def establish_connection(ip, username = '', password = '', delay = 1):
 def enter_enable_mode(remote_conn, enable_password, command = "enable\n", delay = 1):
     remote_conn.write(command)
 	time.sleep(delay)
-	output = remote_conn.read_until("ssword:", READ_TIMEOUT)
+	output = remote_conn.read_until("Password:", READ_TIMEOUT)
 	remote_conn.write(enable_password + "\n")
 	time.sleep(delay)
 
@@ -51,8 +51,8 @@ def enter_config_mode(remote_conn, command = "configure terminal\n", delay = 1):
 
 def main():
     ip = 'X.X.X.X'
-    username = 'pynet'
-    password = 'telnet'
+    username = 'aabid'
+    password = 'cisco'
 
     remote_conn = establish_connection(ip, username, password)
 
