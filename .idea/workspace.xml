@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a92922d6-4cac-49ec-abb6-fa39e1ece868" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/L2-L3_Config_auto/telnet_connection.py" afterPath="$PROJECT_DIR$/L2-L3_Config_auto/telnet_connection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/L2-L3_Config_auto/ssh_connection.py" afterPath="$PROJECT_DIR$/L2-L3_Config_auto/ssh_connection.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,18 +17,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="R1Script.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/R1Script.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="date_validate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/date_validate.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,14 +67,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="telnet_connection.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="telnet_connection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/telnet_connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="71" column="10" lean-forward="true" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+            <state relative-caret-position="729">
+              <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
               <folding>
                 <element signature="e#24#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssh_connection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/ssh_connection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+              <folding>
+                <element signature="e#14#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Network_Automation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/Network_Automation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +152,6 @@
         <option value="$PROJECT_DIR$/SSH.py" />
         <option value="$PROJECT_DIR$/NetworkAutomationUsingPython-master/ssh_connection.py" />
         <option value="$PROJECT_DIR$/NetworkAutomationUsingPython-master/cisco_config.py" />
-        <option value="$PROJECT_DIR$/L2-L3_Config_auto/ssh_connection.py" />
         <option value="$PROJECT_DIR$/L2-L3_Config_auto/network_automation.py" />
         <option value="$PROJECT_DIR$/L2-L3_Config_auto/open_excel_file.py" />
         <option value="$PROJECT_DIR$/L2-L3_Config_auto/Network_Automation.py" />
@@ -156,6 +164,7 @@
         <option value="$PROJECT_DIR$/IpRegEx_1.py" />
         <option value="$PROJECT_DIR$/IpRegEx_3.py" />
         <option value="$PROJECT_DIR$/L2-L3_Config_auto/telnet_connection.py" />
+        <option value="$PROJECT_DIR$/L2-L3_Config_auto/ssh_connection.py" />
       </list>
     </option>
   </component>
@@ -535,12 +544,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/L2-L3_Config_auto/ssh_connection.py</url>
-          <line>2</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -718,23 +721,6 @@
     <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/cisco_config.py" />
     <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/main_program.py" />
     <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/open_excel_file.py" />
-    <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/Network_Automation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="78" lean-forward="false" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/ssh_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="e#14#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../th_automation/Test scripts/ts_ospf_func_intra_route_prefer_001.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3349">
@@ -845,11 +831,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/telnet_connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="71" column="10" lean-forward="true" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+        <state relative-caret-position="729">
+          <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
           <folding>
             <element signature="e#24#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/ssh_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding>
+            <element signature="e#14#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L2-L3_Config_auto/Network_Automation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

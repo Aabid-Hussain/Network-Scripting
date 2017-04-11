@@ -16,12 +16,10 @@ def disable_paging(remote_conn):
 	
 #if __name == '__main__':
 if True:
-
-    #VARIABLES THAT NEED CHANGED
+	#VARIABLES THAT NEED CHANGED
 	ip = 'x.x.x.x'
 	username = 'aabid'
 	password = 'xxxxxxx'
-	
 	#Create instance of SSHClient object
 	remote_conn_pre = paramiko.SSHClient()
 	
@@ -38,13 +36,10 @@ if True:
 	
 	#strip the initial prompt
 	output = remote_conn.recv(1000)
-	
 	#See what we have
 	print output
-	
 	#Turn off paging
 	disable_paging(remote_conn)
-	
 	#Send command
 	remote_conn.send("\n")
 	remote_conn.send("ifconfig -a\n")
