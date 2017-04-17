@@ -148,8 +148,6 @@ time.sleep(40)
 
 dut_network = '12.1.2.0'
 
-
-
 show_ip_route = common_get_ip_route(DUT)
 if show_ip_route == "" :
     log_print("No Routing information",1)
@@ -157,14 +155,10 @@ if show_ip_route == "" :
 else :
     log_print("Found Routing entry",1)
 
-
-
-
 route_type= ospf_get_route_type(show_ip_route, dut_network)
 if route_type == "" :
                    log_print(" Test Abort: No route entry",1)
                    exit
-
 if not ospf_is_route_type_IA(route_type):
     log_print("TEST PASSED: Found Intra route",1)
 else:

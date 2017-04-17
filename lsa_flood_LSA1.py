@@ -1,31 +1,9 @@
-#!c:\Python27\python
-####################################################################
-#  Testscript: ts_ospf_func_lsa_flooding_type1.py
-#  Purpose  :  To verify that DUT distribute LSA type 1 within the area
-#               it belong to.
-#
-#  Detail   : The DUT when configured to be in an area, sends and receives
-#             LSA type 1 
-#
-#  Steps    :
-#       Step 1: Open session with DUT and Router R2
-#       Step 2: Add IP address between DUT and R2
-#       Step 3: Add loopback and IP address on DUT and R2
-#       Step 4: Configure OSPF and Add network on DUT and R2
-#       Step 5: Check if DUT sends its networks to R2 as LSA1 
-#
-####################################################################
-
-##############Import main module with all paths ########
 from all_paths import *
 
 ###### Create log file name with timestamp+filename ##############
 testcase = "ospf_func_lsa_flooding_type1"
 filename = "log_" + testcase + ".log"
 logger = logging_file(filename)
-
-
-#### Start of Test case ###########################
 
 
 log_print("Starting Test case %s" %testcase, 1)
