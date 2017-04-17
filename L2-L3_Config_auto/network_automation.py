@@ -24,8 +24,6 @@ def ip_valid(ip_addr):
 		except ValueError:
 			# couldn't convert octet to an integer
 			sys.exit("\n\nInvalid IP address: %s\n" % ip_addr)
-
-
 	# map variables to elements of octets list
 	first_octet, second_octet, third_octet, fourth_octet = octets
 
