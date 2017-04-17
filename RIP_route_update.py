@@ -1,29 +1,3 @@
-####################################################################
-#  Testscript: ts_rip_func_route_update_001.py
-#  Purpose  :  To verify that DUT advertise the RIP learned routes.
-#
-#  Detail   : The DUT when configured to have RIP routes should send updatesto
-#              the adjacent rip router
-#
-#           Loopback1,2,3       
-#Topology  :        ---R1 --------- DUT ---------R2
-#
-#
-#  Steps    :
-#       Step 1: Open session with DUT, Route R1 and Router R2
-#       Step 2: Add IP address in DUT, R1 and R2
-#       Step 3: Configure RIP on R1 and Add network towards DUT to RIP
-#               and loopback 1,2 & 3 network to RIP
-#       Step 4: Configure RIP on DUT and Add network towards R1 and R1 to RIP
-#       Step 5: Configure RIP on R2 and Add network towards DUT to RIP
-#       Step 6: Wait for RIP to send updates (sleep 60 sec)
-#       Step 7: Check DUT RIP database has entry for R1's loopback networks 1,2, & 3
-#               send by R1
-#       Step 8: Check R2 RIP database has entry for R1'sloopback networks1,2 &3
-#
-####################################################################
-
-##############Import main module with all paths ########
 from all_paths import *
 
 ###### Create log file name with timestamp+filename ##############
