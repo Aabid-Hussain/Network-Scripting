@@ -1,7 +1,7 @@
 from all_paths import *
 
 ###### Create log file name with timestamp+filename ##############
-testcase = "ospf_func_intra_route_prefer_001"
+testcase = "RIP route update"
 filename = "log_" + testcase + ".log"
 logger = logging_file(filename)
 
@@ -12,9 +12,9 @@ logger = logging_file(filename)
 log_print("Starting Test case %s" %testcase, 1)
 
 ###############Step 1: Open session with DUT, Route R1 and Router R2 ###########
-DUT = th_init_device("C:/Python27/th_automation/resource/DUT.txt")
-R1 = th_init_device("C:/Python27/th_automation/resource/R1.txt")
-R2 = th_init_device("C:/Python27/th_automation/resource/R2.txt")
+DUT = th_init_device("C:/Python27/Automation/content/DUT.txt")
+R1 = th_init_device("C:/Python27/Automation/content/R1.txt")
+R2 = th_init_device("C:/Python27/Automation/content/R2.txt")
 
 
 handler = th_open_dev(DUT)
