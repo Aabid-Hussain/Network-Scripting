@@ -48,7 +48,6 @@ def telnetDevice(device):
     telN.write(device.device_enable_password + "\n")
     telN.read_until(device.device_prompt)
     telN.write("terminal length 0" + "\n")
-
     return telN
 
 readDutFile("E:\ME\Github_Network-Scripting\File_Loc\DUT.txt")
