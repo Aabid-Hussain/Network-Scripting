@@ -5,16 +5,14 @@ import telnetlib
 class deviceClass:
     deviceCount=0
     def __init__(self):
-        deviceClass.deviceCount +=1
-        pass
-
+        self.deviceCount +=1
+        #pass
 
 def createResource(dict):
     div =deviceClass()
     for x in dict.key():
         setattr(div,x,dict[x])
     return div
-
 
 def readDutFile(filename):
     fileHeader = open(filename,'r+')
@@ -34,7 +32,6 @@ def readDutFile(filename):
         divDict[key.strip()]= value.strip()
     Res = createResource(divDict)
     return Res
-
 
 def telnetDevice(device):
     telN = telnetlib.Telnet(device.device_IP)
