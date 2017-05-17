@@ -8,17 +8,17 @@ class deviceClass:
         self.deviceCount +=1
         #pass
 
-def createResource(dict):
-    div =deviceClass()
-    for x in dict.key():
-        setattr(div,x,dict[x])
+def createResource(dict1):
+    div = deviceClass()
+    for x in dict1.keys():
+        setattr(div, x, dict1[x])
     return div
 
 def readDutFile(filename):
     fileHeader = open(filename,'r+')
     print "DUT file is opened\n"
     if not fileHeader:
-        print "Error:Device file named \" %s \" error out" %filename
+        print "Error:Device file named {} error out".format(filename)
         return 0
     divDict = {}
     for line in fileHeader.readlines():
@@ -28,7 +28,7 @@ def readDutFile(filename):
             print "Error"
             return 0
         key = match.group(1)
-        value=match.group(2)
+        value = match.group(2)
         divDict[key.strip()]= value.strip()
     Res = createResource(divDict)
     return Res
@@ -47,4 +47,15 @@ def telnetDevice(device):
     telN.write("terminal length 0" + "\n")
     return telN
 
-readDutFile("E:\ME\Github_Network-Scripting\File_Loc\DUT.txt")
+def sendCommand(device,command,promt=''):
+    dev = device.device_handler
+
+    if not promt:
+        prompt = device.device_prompt
+    dev.write(command)
+    out = dev.read_until(promt)
+    return out
+
+
+FileRead =
+handler = telnetDevice(FileRead)
