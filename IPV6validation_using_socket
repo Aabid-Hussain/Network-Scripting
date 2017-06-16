@@ -1,0 +1,27 @@
+'''
+socket.inet_pton(address_family, ip_string)
+Convert an IP address from its family-specific string format to a packed, binary format.
+inet_pton() is useful when a library or network protocol calls for an object of type struct in_addr
+(similar to inet_aton()) or struct in6_addr.
+Supported values for address_family are currently AF_INET and AF_INET6.
+If the IP address string ip_string is invalid, socket.error will be raised.
+Note that exactly what is valid depends on both the value of address_family and
+the underlying implementation of inet_pton().
+
+'''
+
+
+import socket
+
+def check_ipv6(n):
+    try:
+        #socket.inet_pton(address_family, ip_string)
+        socket.inet_pton(socket.AF_INET6, n)
+        return True
+    except socket.error:
+        return False
+
+print check_ipv6('::1')
+print check_ipv6('foo')
+print check_ipv6(5)
+print check_ipv6(None)
