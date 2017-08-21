@@ -19,7 +19,7 @@ if Password_Logging:
     Router_1.read_until("R1>",2)
     en = raw_input("Enter the Enable cmd: ")
     Router_1.write(en +"\n")
-
+    time.sleep(20)
 # If Password_Enable is not empty that perform below operation
 Password_Enable = getpass.getpass(prompt='Enter Enable Password: ')
 if Password_Enable:
@@ -34,7 +34,7 @@ if Password_Enable:
     Run_Conf = Router_1.read_until("R1#",5)
     print Inter_Brief
     print Run_Conf
-print Router_1.readall()
+print Router_1.read_all()
 Router_1.close()
 
 
