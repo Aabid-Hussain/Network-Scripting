@@ -25,4 +25,4 @@ capture = pyshark.FileCapture("E:\ME\Lab\RIP\BGP_routes.pcapng")
 
 for inline in capture:
     print (inline)
-    time.sleep(10)
+    time.sleep(5)
