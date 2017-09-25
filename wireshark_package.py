@@ -1,5 +1,6 @@
 import pyshark
 import time
+import getpass
 
 '''
 capture = pyshark.FileCapture("E:\ME\Lab\RIP\Rip.pcapng")
@@ -25,4 +26,4 @@ capture = pyshark.FileCapture("E:\ME\Lab\RIP\BGP_routes.pcapng")
 
 for inline in capture:
     print (inline)
-    time.sleep(5)
+    time.sleep(9)
