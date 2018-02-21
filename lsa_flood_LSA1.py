@@ -22,7 +22,7 @@ else :
 
 handler = th_open_dev(R2)
 if handler :
-    setattr(R2,'device_handler',handler)
+    setattr(R2,'device_handler',handler) # R2.device_handler = handler
     log_print("Step 1: Successfully open R2 at %s" %R2.device_IP,1)
 else :
     log_print("Step1: Failed to open R2 device at %s" %R2.device_IP,1)
