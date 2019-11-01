@@ -1,0 +1,73 @@
+{
+  "primary_test_device_model": "Model X",
+  "appium_starting_port": 5000,
+  "apk_download_path": "C:\\Teams_APK",
+  "common_log_share": "\\\\<Computer_Name>\\<Folder_Name>",
+  "mail_to_users": "abc@domain.com,xyz@domain.com",
+  "sendgrid_api_key": "dummykey",
+  "users": {
+    "Ellie" : {
+            "username" : "abc@xx.ondomain.com",
+            "password" : "password",
+            "displayname" : "abc",
+            "phonenumber" : "12345674198",
+            "pstndisplay" : "+1 234-567-4198"
+        },
+        "Leo" : {
+            "username" : "xyz@xx.ondomain.com",
+            "password" : "password",
+            "displayname" : "xyz",
+            "phonenumber" : "19876543213",
+            "pstndisplay" : "+1 987-654-3213"
+        },
+        "Elizabeth" : {
+            "username" : "ncnc@xx.ondomain.com",
+            "password" : "password",
+            "displayname" : "ncnc",
+            "phonenumber" : "1478112549",
+            "pstndisplay" : "+1 478-112-2549"
+        },
+		"Peter" : {
+            "username" : "yyuu@xx.ondomain.com",
+            "password" : "password",
+            "displayname" : "yyuu",
+            "phonenumber" : "14785878601",
+            "pstndisplay" : "+1 478-587-8601"
+    },
+    "devices" :  {
+        "IPPhone1" : {
+            "serial" : "0004f2fcb40b",
+            "ip_address" : "0004f2fcb40b",
+            "brand" : "Partner X",
+            "model" : "Model X",
+            "firmware" : "1.0"
+        },
+        "IPPhone2" : {
+            "serial" : "0004f2fce069",
+            "ip_address" : "0004f2fce069",
+            "brand" : "Partner Y",
+            "model" : "Model X",
+            "firmware" : "1.0"
+        },
+        "IPPhone3" : {
+            "serial" : "10.50.10.168",
+            "ip_address" : "10.50.10.168",
+            "brand" : "Partner Y",
+            "model" : "Model Y",
+            "firmware" : "1.0"
+        },
+		"IPPhone4" : {
+            "serial" : "10.50.10.76",
+            "ip_address" : "10.50.10.76",
+            "brand" : "Partner X",
+            "model" : "Model Y",
+            "firmware" : "1.0"
+    }
+  },
+  "teams_webhooks": {
+    "schedule_webhook": "https://outlook.office.com/webhook/dummyIncomingWebhook/dummy",
+    "success_webhook": "https://outlook.office.com/webhook/dummyIncomingWebhook/dummy",
+    "failure_webhook": "https://outlook.office.com/webhook/dummyIncomingWebhook/dummy",
+    "info_webhook": "https://outlook.office.com/webhook/dummyIncomingWebhook/dummy"
+  }
+}

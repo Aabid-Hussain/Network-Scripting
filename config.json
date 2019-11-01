@@ -1,0 +1,27 @@
+{
+  "primary_test_device_model": "T55A",
+  "appium_starting_port": 5000,
+  "apk_download_path": "C:\\Teams_APK",
+  "common_log_share": "C:\\SakuraiAutomation\\Logs",
+  "mail_to_users": "abc@domain.com,xyz@domain.com",
+  "sendgrid_api_key": "dummykey",
+  "users": {
+    "Shadab": {
+      "username": "Shaji@skypecert.onmicrosoft.com",
+      "password": "Wipro@123",
+      "displayname": "Shadab Subhan",
+      "phonenumber": "4255775028",
+      "pstndisplay": "+14255775028"
+    }
+  },
+  "devices" :  {
+    "IPPhone1" : {
+      "serial" : "10.10.10.112",
+      "ip_address" : "10.10.10.112",
+      "brand" : "Yealink",
+      "model" : "T55A",
+      "firmware" : "58.15.0.35"
+    }
+  }
+
+}

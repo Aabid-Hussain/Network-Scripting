@@ -1,0 +1,17 @@
+shell getprop ro.build.version.release
+shell getprop ro.product.device
+shell "dumpsys package com.microsoft.skype.teams.ipphone | grep versionName "
+shell "dumpsys package com.microsoft.windowsintune.companyportal | grep versionName "
+shell pm clear com.microsoft.skype.teams.ipphone
+shell pm clear com.microsoft.windowsintune.companyportal
+shell pm grant com.microsoft.skype.teams.ipphone android.permission.RECORD_AUDIO
+shell am start -n com.microsoft.skype.teams.ipphone/com.microsoft.skype.teams.Launcher
+shell pm clear com.microsoft.skype.teams.ipphone
+shell am start -n com.microsoft.skype.teams.ipphone/com.microsoft.skype.teams.Launcher
+shell input keyevent KEYCODE_BACK
+shell input keyevent KEYCODE_ENTER
+To get the appPackage and appActivity
+adb shell "dumpsys window windows | grep -E 'mCurrentFocus'"
+adb shell "dumpsys activity activities | grep mFocusedActivity"
+
+

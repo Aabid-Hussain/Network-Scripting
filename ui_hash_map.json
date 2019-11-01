@@ -1,0 +1,349 @@
+{
+    "chat_window_message": {
+        "command": "new UiSelector().className(\"android.widget.EditText\").textContains(\"Type a message here\")"
+    },
+    "main_application": {
+        "command": "new UiSelector().className(\"android.widget.FrameLayout\")"
+    },
+    "main_username": {
+        "command": "new UiSelector().className(\"android.widget.EditText\").instance(0)"
+    },
+    "main_password": {
+        "command": "new UiSelector().className(\"android.widget.EditText\").instance(0)"
+    },
+    "cp_username" :{
+        "command": "new UiSelector().className(\"android.widget.EditText\").instance(0)"
+    },
+    
+    "company_portal" :{
+        "command": "new UiSelector().packageName(\"com.microsoft.windowsintune.companyportal\")"
+    },
+    "main_submit": {
+        "id": "idSIButton9",
+        "command": "new UiSelector().className(\"android.widget.Button\").description(\"Sign in\")"
+    },
+    "call_window_switch_speaker": {
+        "command": "new UiSelector().resourceId(\"com.microsoft.skype.teams.ipphone:id/call_control_speaker\")"
+    },
+    "first_time_username": {
+        "id": "com.microsoft.skype.teams.ipphone:id/edit_email"
+    },
+    "first_time_submit": {
+        "id": "com.microsoft.skype.teams.ipphone:id/sign_in_button"
+    },
+    "main_pre_login_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/sign_in_button"
+    },
+    "fre_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/action_button"
+    },
+    "fre_last_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/action_last_button"
+    },
+    "bottom_bar_more_button": {
+        "xpath": "//android.widget.FrameLayout[@index=7]"
+    },
+    "first_view_item" : {
+        "command": "new UiSelector().className(\"android.view.View\").instance(0)"
+    },
+    "navigate_back": {
+        "command": "new UiSelector().className(\"android.widget.ImageButton\").description(\"Back\")"
+    },
+    "signin_back_button" :{
+        "id": "com.microsoft.skype.teams.ipphone:id/sign_in_back_button"
+    },
+    "activity_title": {
+        "text": "Feed",
+        "command": "new UiSelector().text(\"Feed\")"
+    },
+    "chat_title": {
+        "text": "Chat",
+        "command": "new UiSelector().text(\"Chat\")"
+    },
+    "teams_title": {
+        "text": "Teams",
+        "command": "new UiSelector().text(\"Teams\")"
+    },
+    "meetings_title": {
+        "text": "Meetings",
+        "command": "new UiSelector().text(\"Meetings\")"
+    },
+    "calls_title": {
+        "text": "Calls",
+        "command": "new UiSelector().text(\"Calls\")"
+    },  
+    "voicemails_title": {
+        "text": "Voicemail",
+        "command": "new UiSelector().text(\"Voicemail\")"
+    },  
+    "meeting_time" : {
+        "xpath": "//android.widget.TextView[@resource-id = 'com.microsoft.skype.teams.ipphone:id/meeting_time']"
+    },
+    "meeting_date" : {
+        "xpath": "//android.widget.TextView[@resource-id = 'com.microsoft.skype.teams.ipphone:id/meeting_date']"
+    },
+    "t120_call_participant_name" : {
+        "command": "new UiSelector().text('Receiver 1')"
+    },
+    "chat_link_in_meeting_details_page" : {
+        "command": "new UiSelector().text('Chat with participants')"
+    },
+    "t120_meeting_participant_summary" : {
+        "command": "new UiSelector().text('1 participants')"
+    },
+    "see_description_in_meeting_details_page" : {
+        "xpath": "//android.widget.TextView[@text='See details']"
+    },
+    "edit_button_in_meeting_details_page" : {
+        "command": "new UiSelector().text('Edit')"
+    },
+    "organizer_for_meeting" : {
+        "command": "new UiSelector().text('Organizer')"
+    },
+    "meeting_location" : {
+        "command": "new UiSelector().text('Microsoft Teams Meeting')"
+    },
+    "t120_Meetings" : {
+        "xpath": "//android.widget.TextView[@text = 't120 Meetings']"
+    },
+    "meeting_participants" : {
+        "command": "new UiSelector().text('userName')"
+    },
+    "show_Roaster" : {
+      "id": "com.microsoft.skype.teams.ipphone:id/showRoster"
+    },
+    "call_banner" : {
+        "command": "new UiSelector().resourceId(\"com.microsoft.skype.teams.ipphone:id/call_bar\")"
+    },
+    "join_button": {
+      "command": "new UiSelector().resourceId(\"com.microsoft.skype.teams.ipphone:id/join_button\")"
+    },
+    "join_specific_meetings": {
+        "xpath": "//android.widget.TextView[@text = 'Join'][../android.widget.TextView[@text = 'meetingName']]"
+    },
+    "more_title": {
+        "text": "More",
+        "command": "new UiSelector().text(\"More\")"
+    },
+    "videocall_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/chat_action_view_item_call_video"
+    },
+    "start_presenting": {
+      "id": "com.microsoft.skype.teams.ipphone:id/present"
+    },
+    "share_video": {
+      "command": "new UiSelector().text(\"Share video\")"
+    },
+    "hold_text": {
+      "command": "new UiSelector().text(\"You are on hold\")"
+    },
+    "held_text": {
+        "command": "new UiSelector().text(\"  You have been put on hold\")"
+    },
+    "resume_call": {
+      "id": "com.microsoft.skype.teams.ipphone:id/call_unhold_button"
+    },
+    "place_call_on_hold": {
+      "command": "new UiSelector().text(\"Place call on hold\")"
+    },
+    "transfer_options": {
+        "command": "new UiSelector().text(\"Transfer\")"
+    },
+    "transfer_options_blind": {
+        "command": "new UiSelector().text(\"Transfer now\")"
+    },
+    "transfer_options_consult": {
+        "command": "new UiSelector().text(\"Consult first\")"
+    },
+    "complete_consult_transfer": {
+        "command": "new UiSelector().resourceId(\"com.microsoft.skype.teams.ipphone:id/transfer_button\")"
+    },
+    "turn_off_incoming_video": {
+      "command": "new UiSelector().text(\"Turn on incoming video\")"
+    },
+    "turn_on_incoming_video": {
+      "command": "new UiSelector().text(\"Turn off incoming video\")"
+    },
+    "call_more_options": {
+      "command": "new UiSelector().resourceId(\"com.microsoft.skype.teams.ipphone:id/call_more_options\")"
+    },
+    "disable_video_call": {
+        "command": "new UiSelector().resourceId(\"com.microsoft.skype.teams.ipphone:id/call_control_video\")"
+    },
+    "enable_video_call": {
+        "command": "new UiSelector().resourceId(\"com.microsoft.skype.teams.ipphone:id/call_control_video\")"
+    },
+    "audiocall_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/chat_action_view_item_call_audio"
+    },
+    "audiocall_button_ipphone": {
+        "command": "new UiSelector().className(\"android.widget.ImageView\").description(\"Make an audio call\")"
+    },
+    "call_window_mute_call": {
+      "command": "new UiSelector().description(\"Mute\")"
+    },
+    "call_window_unmute_call": {
+      "command": "new UiSelector().description(\"Unmute\")"
+    },
+    "call_window_accept_audio_call": {
+        "id": "com.microsoft.skype.teams.ipphone:id/call_phone"
+    },
+    "call_window_accept_video_call": {
+        "id": "com.microsoft.skype.teams.ipphone:id/call_phone"
+    },
+    "call_window_video_control": {
+        "id": "com.microsoft.skype.teams.ipphone:id/call_control_video"
+    },
+    "call_window_reject_call": {
+        "id": "com.microsoft.skype.teams.ipphone:id/call_end_button"
+    },
+    "pstn_call_phone": {
+        "id": "com.microsoft.skype.teams.ipphone:id/call"
+    },
+    "pstn_dialpad": {
+        "id": "com.microsoft.skype.teams.ipphone:id/dial_pad"
+    },    
+    "call_window_close_rating": {
+        "id": "com.microsoft.skype.teams.ipphone:id/ImageView_CloseCallRating"
+    },
+    "fab_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/fab"
+    },
+	"shared_mode_fab_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/meeting_fragment_fab"
+    },
+    "search_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/action_bar_search_action"
+    },      
+    "search_contact_box": {
+        "id": "com.microsoft.skype.teams.ipphone:id/search_contact_box"
+    },
+    "search_result" :{
+        "id": "com.microsoft.skype.teams.ipphone:id/search_result_item_container"
+    },
+    "search_textfield": {
+        "id": "com.microsoft.skype.teams.ipphone:id/search_src_text"
+    },
+    "people_button": {
+        "text": "PEOPLE",
+        "command": "new UiSelector().text(\"PEOPLE\")"
+    },
+    "user_popup": {
+           "command": "new UiSelector().description(\"userName\")"
+    },
+    "call_user": {
+        "command": "new UiSelector().className(\"android.widget.ImageView\").description(\"Make an audio call\")"
+    },
+    "privatechat_button": {
+        "command": "new UiSelector().className(\"android.widget.ImageView\").description(\"Open private chat\")"
+    },
+    "message_area_edit_text": {
+        "id": "com.microsoft.skype.teams.ipphone:id/message_area_edit_text"
+    },
+    "send_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/send_button"
+    },
+    "click_on_user": {
+        "text": "command",
+        "id": "com.microsoft.skype.teams.ipphone:id/chat_display_name"
+    },
+    "tab_alerts": {
+        "id": "com.microsoft.skype.teams.ipphone:id/tab_alerts"
+    },
+    "tab_chat": {
+        "id": "com.microsoft.skype.teams.ipphone:id/tab_chat"
+    },
+    "tab_teams": {
+        "id": "com.microsoft.skype.teams.ipphone:id/tab_teams"
+    },
+    "tab_more": {
+        "id": "com.microsoft.skype.teams.ipphone:id/tab_more"
+    },
+    "settings_navigation": {
+        "text": "Settings",
+        "command": "new UiSelector().text(\"Settings\")"
+    },
+    "sliding_menu": {
+        "text": "Settings",
+        "command": "new UiSelector().description(\"Open Hamburger menu\")"
+    },
+    "call_from_call_log" :{
+        "command": "new UiSelector().description(\"Call, button., Double tap to activate\")"
+    },
+    "transfer_ok_button": {
+        "text": "OK",
+        "command": "new UiSelector().text(\"OK\")"
+    },
+    "signout_ok_button": {
+        "text": "OK",
+        "command": "new UiSelector().text(\"OK\")"
+    },
+    "profile_window_signout_confirm": {
+        "text": "OK",
+        "command": "new UiSelector().text(\"OK\")"
+      },
+    "signout_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/settings_item_sign_out"
+    },
+    "partner_settings_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/settings_item_partner_settings"
+    },
+    "fre_settings_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/fre_partner_settings"
+    },
+    "first_time_tutorial": {
+        "command": "new UiSelector().className(\"android.widget.TextView\").textContains(\"Add photos, reactions\")"
+    },
+  "select_notification": {
+    "text": "notification",
+    "command": "new UiSelector().text(\"name\")"
+  },
+  "my_highlights_confirm_upload_successful": {
+        "text": ".*minutes.*|.*minute ago.*|.*Just now.*",
+        "command": "new UiSelector().textMatches(\".*minutes.*|.*minute ago.*|.*Just now.*\")"
+    },
+    "select_participant": {
+        "command": "new UiSelector().description(\"user_name, Status: In a call\")"
+    },
+    "select_participant_ipphone": {
+        "command": "new UiSelector().description(\"user_name\")"
+    },
+    "add_participant": {
+        "id": "com.microsoft.skype.teams.ipphone:id/add_member_to_meeting"
+    },
+    "save_contact": {
+        "id": "com.microsoft.skype.teams.ipphone:id/save_contacts"
+    },
+    "remove_from_the_call": {
+        "xpath": "//android.widget.FrameLayout/android.widget.Button[@text='Remove from the call']"
+    },
+    "remove_from_the_meeting": {
+        "xpath": "//android.widget.FrameLayout/android.widget.Button[@text='Remove from meeting']"
+    },
+    "critical_update_pop_up": {
+        "text": "Later",
+        "command": "new UiSelector().text(\"Later\")"
+    },
+    "switch_camera": {
+        "id": "com.microsoft.skype.teams.ipphone:id/switch_camera"
+    },
+    "welcome_signin_button": {
+        "id": "com.microsoft.skype.teams.ipphone:id/welcome_sign_in_button"
+    },
+    "account_type_alert": {
+        "text": "What type of login account is this?",
+        "command" :"new UiSelector().resourceId(\"android:id/alertTitle\")"
+    },
+    "account_type_personal" : {
+        "text" : "Personal",
+        "command": "new UiSelector().text(\"Personal\")"
+    },
+    "account_type_shared" : {
+        "text" : "Shared",
+        "command": "new UiSelector().text(\"Shared\")"
+    },
+    "account_type_confirm" : {
+        "text" : "OK",
+        "command" :"new UiSelector().resourceId(\"android:id/button1\").instance(0)"
+    }
+}
